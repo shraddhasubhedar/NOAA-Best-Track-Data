@@ -35,7 +35,7 @@ public class Geolocation {
 	 */
 	public static String geoLocate(String latitude, String longitude){
 		// create URL string
-		String urlStr = "https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyDT8pk7N8cRT6YhuGwP6snCy51naQqsH4g&latlng=" + latitude + "," + longitude +"&sensor=true";
+		String urlStr = "https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyA6siXOoj7wDMVndw1mY9SlrWFlBBItruw&latlng=" + latitude + "," + longitude +"&sensor=true";
 		// making URL request
 		try {
 			URL url = new URL(urlStr);
@@ -84,7 +84,7 @@ public class Geolocation {
 	 */
 	public static String elevation(String latitude, String longitude){
 		//generate URL
-		String urlStr = "https://maps.googleapis.com/maps/api/elevation/json?locations="+latitude+","+longitude+"&key=AIzaSyAl_GkmNaoCTG49LA0lld1ozgZxDrxEFd0";
+		String urlStr = "https://maps.googleapis.com/maps/api/elevation/json?locations="+latitude+","+longitude+"&key=AIzaSyCwhVUzmJZAmYwMTDfkCZ4fxvqT7kN6Bmk";
 		// making URL request
 		try {
 			URL url = new URL(urlStr);
