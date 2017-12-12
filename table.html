@@ -28,7 +28,7 @@ td {
     
       var table = document.getElementById('outputTable');
     
-      function parseCSV(text, lineTerminator, cellTerminator) {
+      function parseTXT(text, lineTerminator, cellTerminator) {
       
         //break the lines apart
         var lines = text.split(lineTerminator);
@@ -66,7 +66,7 @@ td {
             return function(e) {
             
               //call the parse function with the proper line terminator and cell terminator
-              parseCSV(e.target.result, '\n', ',');
+              parseTXT(e.target.result, '\n', ',');
             
             };
           })(f);
